@@ -1,0 +1,170 @@
+:root {
+    /*altura*/
+    --root-h: 200svh;
+    font-size: 20px;
+
+    /*colores*/
+    --color-main: #4D455D;
+    --color-sec: #E96479;
+    --color-inver: #F5E9CF;
+    --color-detalles: #7DB9B6;
+}
+
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body>main {
+    height: fit-content;
+    background-color: var(--color-inver);
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+
+}
+
+main>section {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4em;
+    padding-top: 80px;
+}
+
+.remeras {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+}
+
+.remeras:hover .textoremeras {
+    width: 100%;
+    height: 100%;
+}
+
+.remeras img {
+    display: block;
+    width: 100%;
+    height: 500px;
+}
+
+@media screen and (max-width: 500px) {
+    .remeras img{
+      width: 100%;
+     height: 50%;
+    }
+}
+.remeras .textoremeras {
+    width: 0;
+    height: 50%;
+    background: var(--color-sec);
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 400ms ease-in-out;
+}
+
+.textoremeras h2 {
+    color: #fff;
+    font-size: 2rem;
+    border: 6px solid #fff;
+    padding: .4em 0.5em;
+    text-decoration: none;
+}
+.textoremeras a{
+    text-decoration-line: none;  
+}
+     
+  
+
+
+.pantalones {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.pantalones:hover .textopantalones {
+    width: 100%;
+    height: 100%;
+}
+
+.pantalones img {
+    display: block;
+    width: 100%;
+    height: 500px;
+
+}
+
+@media screen and (max-width: 500px) {
+    .pantalones img{
+      width: 100%;
+     height: 50%;
+    }
+}
+
+.pantalones .textopantalones {
+    width: 0;
+    height: 50%;
+    background: var(--color-detalles);
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 400ms ease-in-out;
+}
+
+.textopantalones h2 {
+    color: #fff;
+    font-size: 2rem;
+    border: 6px solid #fff;
+    padding: .4em 0.5em;
+
+}
+
+.textopantalones a {
+    text-decoration-line: none;
+}
+
+.tamano{
+    position: fixed;
+    height: 150px;
+    width: 150px;
+   
+}
+
+
+@media screen and (max-width: 80px){
+    .tamano{
+       width: 130px;
+      }   
+ }
+@media screen and (max-width: 500px){
+    .tamano{
+      width: 100px;
+     }   
+}
+.boton.btn{
+    background-color:var(--color-detalles);
+   
+   }

@@ -1,0 +1,57 @@
+
+@import url("/assets/css/index/galeria.main.style.css");
+
+main {
+    height: 90%;
+    
+}
+
+main>section{
+    height: auto;
+} 
+
+main section:nth-child(1) p{
+    font-family: var(--font-deco4);
+    font-size: 47px;
+    padding-top: 1%;
+padding-left: 3%;
+padding-bottom: 10%;
+padding-right: 4%;
+    margin: 0rem;
+    position: center;
+    text-align: justify;
+
+    }
+
+
+body main section h2{
+    font-family: var(--font-deco2);
+    font-size: 48px;
+    padding: 0rem;
+    margin: 5rem;
+ 
+
+}
+body section main section:nth-child(1){
+    background-color: var(--color-inver);
+    padding-top: 10px;
+    height: 40%;
+ 
+}
+body section main section:nth-child(2){
+    background-color: var(--color-detalles);
+    padding-top: 10px;
+  
+ 
+}
+ 
+
+
+body main section:nth-child(2)>h2{
+    color: var(--color-inver);
+    text-align: center;
+}
+
+section#quienessomos{
+    color: #4D455D;
+}
