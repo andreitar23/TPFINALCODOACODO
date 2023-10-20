@@ -1,0 +1,181 @@
+
+@import url("/assets/css/index/header.main.style.css");
+
+@media screen and (max-width: 945px) {
+    div.ubicacion{
+    width: 100%;
+    }
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+}
+body div {
+ height: 80%;
+background-color: var(--color-detalles); 
+align-items: center;
+}
+
+marquee{
+    padding-top: 5rem;
+}
+form{
+    padding-top: 1%;
+    align-items: center;
+    contain: initial;
+    background-blend-mode: darken;
+    box-sizing: border-box;
+    
+
+}
+
+form>div{
+    padding: 0.5%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: 1;
+}
+
+
+form>div>input{
+    width: 20%;
+
+}
+#genero {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: 1;
+}
+
+#genero div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: 1;
+}
+div>label{
+   padding-right: 15%;
+} 
+div#genero>label{
+padding: 0%;
+
+}
+#genero{
+    align-items:center;
+}
+
+span{
+    padding: 1rem;
+}
+
+body>div>form>div>button{
+   animation: wiggle 2s linear infinite;
+   background-color: var(--color-main);
+   border-radius: 10%;
+   filter: drop-shadow(5px 5px 2px #4D455D);
+   animation: wiggle 2s linear infinite;
+   color:var(--color-detalles);
+   font-weight: 800;
+}
+form button:hover {
+    background-color:var(--color-sec);
+    color: white;
+    font-weight: 900;
+    border: 2px solid rgb(109, 42, 210);
+    animation: none !important;
+}
+.animation {
+    animation: wiggle 2s linear infinite;
+}
+
+
+@keyframes wiggle {
+    0%,
+    7% {
+        transform: rotateZ(0);
+    }
+    15% {
+        transform: rotateZ(-15deg);
+    }
+    20% {
+        transform: rotateZ(10deg);
+    }
+    25% {
+        transform: rotateZ(-10deg);
+    }
+    30% {
+        transform: rotateZ(6deg);
+    }
+    35% {
+        transform: rotateZ(-4deg);
+    }
+    40%,
+    100% {
+        transform: rotateZ(0);
+    }
+}
+
+.ubicacion{
+  
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+
+}
+
+
+form div:hover {
+    color: rgb(254, 254, 255);
+}
+
+.container {
+    background-color: var(--color-main);
+} 
+
+
+div.ocultar-div1{
+    background-color: #4D455D;
+   padding-top: 3rem;
+}
+
+.boton.btn{
+ background-color:var(--color-detalles);
+
+}
+
+.offcanvas-body ul{
+    display: flex;
+    flex-direction: column;
+}
+div.offcanvas-body {
+background-color:  #4D455D;}
+
+div.offcanvas-header {
+    background-color: #F5E9CF;
+}
+
+.tamano{
+    position: fixed;
+    height: 150px;
+    width: 150px;
+   
+}
+
+
+@media screen and (max-width: 80px){
+    .tamano{
+       width: 130px;
+      }   
+ }
+@media screen and (max-width: 500px){
+    .tamano{
+      width: 100px;
+     }   
+}
+

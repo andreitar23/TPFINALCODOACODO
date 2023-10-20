@@ -1,0 +1,22 @@
+footer {
+
+    height: 10%;
+    background-color: var(--color-main);
+    color: var(--color-inver);
+    font-family: var(--font-custom);
+    position: relative;
+}
+
+
+.style-Footer{
+    color: white;
+    
+}
+
+img{
+    width: 45%
+}
+
+.text-center{
+font-family: var(--font-deco2);
+}
